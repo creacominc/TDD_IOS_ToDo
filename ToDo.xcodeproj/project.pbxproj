@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3647484D2B9D273900E0C55F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3647484C2B9D273900E0C55F /* Location.swift */; };
 		36C0CF642B980CCA002D5C6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C0CF632B980CCA002D5C6F /* AppDelegate.swift */; };
 		36C0CF662B980CCA002D5C6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C0CF652B980CCA002D5C6F /* SceneDelegate.swift */; };
 		36C0CF682B980CCA002D5C6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C0CF672B980CCA002D5C6F /* ViewController.swift */; };
 		36C0CF6B2B980CCA002D5C6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36C0CF692B980CCA002D5C6F /* Main.storyboard */; };
 		36C0CF6D2B980CCB002D5C6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36C0CF6C2B980CCB002D5C6F /* Assets.xcassets */; };
 		36C0CF702B980CCB002D5C6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36C0CF6E2B980CCB002D5C6F /* LaunchScreen.storyboard */; };
-		36C0CF7B2B980CCC002D5C6F /* ToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C0CF7A2B980CCC002D5C6F /* ToDoTests.swift */; };
 		36C0CF852B980CCC002D5C6F /* ToDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C0CF842B980CCC002D5C6F /* ToDoUITests.swift */; };
 		36C0CF872B980CCC002D5C6F /* ToDoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C0CF862B980CCC002D5C6F /* ToDoUITestsLaunchTests.swift */; };
+		36C0CF942B980E67002D5C6F /* ToDoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C0CF932B980E67002D5C6F /* ToDoItemTests.swift */; };
+		36C0CF962B981012002D5C6F /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C0CF952B981012002D5C6F /* ToDoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3647484C2B9D273900E0C55F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		36C0CF602B980CCA002D5C6F /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C0CF632B980CCA002D5C6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36C0CF652B980CCA002D5C6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,10 +48,12 @@
 		36C0CF6F2B980CCB002D5C6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36C0CF712B980CCB002D5C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36C0CF762B980CCC002D5C6F /* ToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		36C0CF7A2B980CCC002D5C6F /* ToDoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTests.swift; sourceTree = "<group>"; };
 		36C0CF802B980CCC002D5C6F /* ToDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C0CF842B980CCC002D5C6F /* ToDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoUITests.swift; sourceTree = "<group>"; };
 		36C0CF862B980CCC002D5C6F /* ToDoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		36C0CF932B980E67002D5C6F /* ToDoItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemTests.swift; sourceTree = "<group>"; };
+		36C0CF952B981012002D5C6F /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		36C0CF972B98116C002D5C6F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +84,7 @@
 		36C0CF572B980CCA002D5C6F = {
 			isa = PBXGroup;
 			children = (
+				36C0CF972B98116C002D5C6F /* README.md */,
 				36C0CF622B980CCA002D5C6F /* ToDo */,
 				36C0CF792B980CCC002D5C6F /* ToDoTests */,
 				36C0CF832B980CCC002D5C6F /* ToDoUITests */,
@@ -106,6 +112,8 @@
 				36C0CF6C2B980CCB002D5C6F /* Assets.xcassets */,
 				36C0CF6E2B980CCB002D5C6F /* LaunchScreen.storyboard */,
 				36C0CF712B980CCB002D5C6F /* Info.plist */,
+				36C0CF952B981012002D5C6F /* ToDoItem.swift */,
+				3647484C2B9D273900E0C55F /* Location.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -113,7 +121,7 @@
 		36C0CF792B980CCC002D5C6F /* ToDoTests */ = {
 			isa = PBXGroup;
 			children = (
-				36C0CF7A2B980CCC002D5C6F /* ToDoTests.swift */,
+				36C0CF932B980E67002D5C6F /* ToDoItemTests.swift */,
 			);
 			path = ToDoTests;
 			sourceTree = "<group>";
@@ -260,6 +268,8 @@
 			files = (
 				36C0CF682B980CCA002D5C6F /* ViewController.swift in Sources */,
 				36C0CF642B980CCA002D5C6F /* AppDelegate.swift in Sources */,
+				3647484D2B9D273900E0C55F /* Location.swift in Sources */,
+				36C0CF962B981012002D5C6F /* ToDoItem.swift in Sources */,
 				36C0CF662B980CCA002D5C6F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36C0CF7B2B980CCC002D5C6F /* ToDoTests.swift in Sources */,
+				36C0CF942B980E67002D5C6F /* ToDoItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
