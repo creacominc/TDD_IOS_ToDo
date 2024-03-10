@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3647484D2B9D273900E0C55F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3647484C2B9D273900E0C55F /* Location.swift */; };
+		3647484F2B9D408600E0C55F /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3647484E2B9D408600E0C55F /* LocationTests.swift */; };
 		36C0CF642B980CCA002D5C6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C0CF632B980CCA002D5C6F /* AppDelegate.swift */; };
 		36C0CF662B980CCA002D5C6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C0CF652B980CCA002D5C6F /* SceneDelegate.swift */; };
 		36C0CF682B980CCA002D5C6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C0CF672B980CCA002D5C6F /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		3647484C2B9D273900E0C55F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		3647484E2B9D408600E0C55F /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		36C0CF602B980CCA002D5C6F /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C0CF632B980CCA002D5C6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36C0CF652B980CCA002D5C6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		36C0CF792B980CCC002D5C6F /* ToDoTests */ = {
 			isa = PBXGroup;
 			children = (
+				3647484E2B9D408600E0C55F /* LocationTests.swift */,
 				36C0CF932B980E67002D5C6F /* ToDoItemTests.swift */,
 			);
 			path = ToDoTests;
@@ -278,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3647484F2B9D408600E0C55F /* LocationTests.swift in Sources */,
 				36C0CF942B980E67002D5C6F /* ToDoItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

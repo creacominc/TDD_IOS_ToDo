@@ -6,7 +6,8 @@
 //
 
 import Foundation
-struct ToDoItem {
+struct ToDoItem
+{
     
     let title: String
     let itemDescription: String?
@@ -24,5 +25,16 @@ struct ToDoItem {
         self.timestamp = timestamp
         self.location = location
     }
-    
+
+}
+
+extension ToDoItem: Equatable
+{
+    static func ==(lhs: ToDoItem, rhs: ToDoItem) -> Bool
+    {
+        return lhs.title == rhs.title
+            && lhs.itemDescription == rhs.itemDescription
+            && lhs.timestamp == rhs.timestamp
+            && lhs.location == rhs.location
+    }
 }

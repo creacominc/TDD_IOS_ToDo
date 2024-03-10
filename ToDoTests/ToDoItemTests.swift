@@ -26,6 +26,9 @@ final class ToDoItemTests: XCTestCase {
                              itemDescription: "Dummy Description" )
         XCTAssertNotNil( item.title, "Dummy" )
         XCTAssertNotNil( item.itemDescription, "Dummy Description" )
+        let dummyItem = ToDoItem( title: "Dummy",
+                                  itemDescription: "Dummy Description" )
+        XCTAssertEqual( item, dummyItem )
     }
     
     func test_init_setsTimestamp() throws
