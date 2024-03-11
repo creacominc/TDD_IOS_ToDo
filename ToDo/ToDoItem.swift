@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct ToDoItem
+struct ToDoItem: Equatable
 {
     
     let title: String
@@ -26,10 +26,7 @@ struct ToDoItem
         self.location = location
     }
 
-}
-
-extension ToDoItem: Equatable
-{
+    /** @NOTE:  This method is not strictly needed since the members are all equitable.  */
     static func ==(lhs: ToDoItem, rhs: ToDoItem) -> Bool
     {
         return lhs.title == rhs.title
