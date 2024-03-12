@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		362E264D2B9FE09500596ACC /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E264C2B9FE09500596ACC /* Coordinate.swift */; };
 		3647484D2B9D273900E0C55F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3647484C2B9D273900E0C55F /* Location.swift */; };
 		3647484F2B9D408600E0C55F /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3647484E2B9D408600E0C55F /* LocationTests.swift */; };
 		369A0DFE2B9EABCE0049E19B /* ToDoItemStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369A0DFD2B9EABCE0049E19B /* ToDoItemStoreTests.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		362E264C2B9FE09500596ACC /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		3647484C2B9D273900E0C55F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		3647484E2B9D408600E0C55F /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		369A0DFD2B9EABCE0049E19B /* ToDoItemStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemStoreTests.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				36C0CF712B980CCB002D5C6F /* Info.plist */,
 				36C0CF952B981012002D5C6F /* ToDoItem.swift */,
 				3647484C2B9D273900E0C55F /* Location.swift */,
+				362E264C2B9FE09500596ACC /* Coordinate.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				362E264D2B9FE09500596ACC /* Coordinate.swift in Sources */,
 				36C0CF682B980CCA002D5C6F /* ViewController.swift in Sources */,
 				36C0CF642B980CCA002D5C6F /* AppDelegate.swift in Sources */,
 				3647484D2B9D273900E0C55F /* Location.swift in Sources */,
