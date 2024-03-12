@@ -21,13 +21,19 @@ final class ToDoItemStoreTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         sut = nil
-        if let url = FileManager.default
-              .urls(for: .documentDirectory,
-                       in: .userDomainMask)
-              .first?
-              .appendingPathComponent("dummy_store") {
-            try? FileManager.default.removeItem(at: url)
-          }
+        //        if let url = FileManager.default
+        //              .urls(for: .documentDirectory,
+        //                       in: .userDomainMask)
+        //              .first?
+        //              .appendingPathComponent("dummy_store") {
+        //            try? FileManager.default.removeItem(at: url)
+        //          }
+        
+        sut = nil
+        let url = FileManager.default
+            .documentsURL(name: "dummy_store")
+        try? FileManager.default.removeItem(at: url)
+        
     }
     
     //
@@ -100,15 +106,37 @@ final class ToDoItemStoreTests: XCTestCase {
         let sut2 = ToDoItemStore(fileName: "dummy_store")
         var result: [ToDoItem]?
         let token = sut2.itemPublisher
-          .sink { value in
-            result = value
-            publisherExpectation.fulfill()
-          }
+            .sink { value in
+                result = value
+                publisherExpectation.fulfill()
+            }
         wait(for: [publisherExpectation], timeout: 1)
         token.cancel()
         XCTAssertEqual(result, [toDoItem])
     }
-    
+
+    func test_init_whenItemIsChecked_shouldLoadPreviousToDoItems() throws
+    {
+        var sut1: ToDoItemStore? = ToDoItemStore(fileName: "dummy_store")
+        let publisherExpectation = expectation(
+            description: "Wait for publisher in \(#file)"
+        )
+        let toDoItem = ToDoItem(title: "Dummy Title")
+        sut1?.add(toDoItem)
+        sut1?.check(toDoItem)
+        sut1 = nil
+        let sut2 = ToDoItemStore(fileName: "dummy_store")
+        var result: [ToDoItem]?
+        let token = sut2.itemPublisher
+            .sink { value in
+              result = value
+              publisherExpectation.fulfill()
+            }
+        wait(for: [publisherExpectation], timeout: 1)
+        token.cancel()
+        XCTAssertEqual(result?.first?.done, true)
+    }
+
 }
 
 extension XCTestCase

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		362E264D2B9FE09500596ACC /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E264C2B9FE09500596ACC /* Coordinate.swift */; };
+		362E264F2B9FF28700596ACC /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E264E2B9FF28700596ACC /* FileManagerExtension.swift */; };
 		3647484D2B9D273900E0C55F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3647484C2B9D273900E0C55F /* Location.swift */; };
 		3647484F2B9D408600E0C55F /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3647484E2B9D408600E0C55F /* LocationTests.swift */; };
 		369A0DFE2B9EABCE0049E19B /* ToDoItemStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369A0DFD2B9EABCE0049E19B /* ToDoItemStoreTests.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		362E264C2B9FE09500596ACC /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		362E264E2B9FF28700596ACC /* FileManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtension.swift; sourceTree = "<group>"; };
 		3647484C2B9D273900E0C55F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		3647484E2B9D408600E0C55F /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		369A0DFD2B9EABCE0049E19B /* ToDoItemStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemStoreTests.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				36C0CF952B981012002D5C6F /* ToDoItem.swift */,
 				3647484C2B9D273900E0C55F /* Location.swift */,
 				362E264C2B9FE09500596ACC /* Coordinate.swift */,
+				362E264E2B9FF28700596ACC /* FileManagerExtension.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				36C0CF642B980CCA002D5C6F /* AppDelegate.swift in Sources */,
 				3647484D2B9D273900E0C55F /* Location.swift in Sources */,
 				36C0CF962B981012002D5C6F /* ToDoItem.swift in Sources */,
+				362E264F2B9FF28700596ACC /* FileManagerExtension.swift in Sources */,
 				369A0E002B9EAC170049E19B /* ToDoItemStore.swift in Sources */,
 				36C0CF662B980CCA002D5C6F /* SceneDelegate.swift in Sources */,
 			);
