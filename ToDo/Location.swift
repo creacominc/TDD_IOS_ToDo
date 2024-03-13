@@ -8,24 +8,47 @@
 import Foundation
 import CoreLocation
 
-struct Location 
+struct Location : Equatable, Codable
 {
     let name: String
-    let coordinate: CLLocationCoordinate2D?
+    let coordinate: Coordinate?
+    //    let coordinate: CLLocationCoordinate2D?
+
     init(name: String,
-         coordinate: CLLocationCoordinate2D? = nil)
+         coordinate: Coordinate? = nil)
     {
         self.name = name
         self.coordinate = coordinate
     }
-}
 
-extension Location: Equatable
-{
     static func ==(lhs: Location, rhs: Location) -> Bool
     {
-        return lhs.name == rhs.name
-        && lhs.coordinate?.latitude == rhs.coordinate?.latitude
-        && lhs.coordinate?.longitude == rhs.coordinate?.longitude
+        if lhs.name != rhs.name 
+        {
+            return false
+        }
+        if lhs.coordinate == nil, rhs.coordinate != nil 
+        {
+            return false
+        }
+        if lhs.coordinate != nil, rhs.coordinate == nil 
+        {
+            return false
+        }
+        if let lhsCoordinate = lhs.coordinate,
+            let rhsCoordinate = rhs.coordinate 
+        {
+            if abs(lhsCoordinate.longitude -
+                   rhsCoordinate.longitude) > 0.000_000_1 
+            {
+                return false
+            }
+            if abs(lhsCoordinate.latitude -
+                   rhsCoordinate.latitude) > 0.000_000_1 
+            {
+                return false
+            }
+        }
+        return true
     }
 }
